@@ -1,0 +1,6 @@
+#hos
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    new=(n+1)//10
+    print(new)
