@@ -1,0 +1,27 @@
+# hos
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    s = input()
+    odd = []
+    even = []
+    found = False
+
+    for i in range(n):
+        if s[i] in even and i % 2 == 1:
+            found = True
+            break
+        elif s[i] in odd and i % 2 == 0:
+            found = True
+            break
+        elif s[i] not in even and s[i] not in odd:
+            if i % 2 == 0:
+                even.append(s[i])
+            else:
+                odd.append(s[i])
+
+    if found:
+        print("NO")
+    else:
+        print("YES")
