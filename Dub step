@@ -1,0 +1,4 @@
+import re
+s = input()
+v = re.sub(r'wub', ' ', s, flags=re.IGNORECASE).split()
+print(" ".join(v))
